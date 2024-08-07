@@ -1,0 +1,75 @@
+/* General container styles */
+.Edit-page{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.Page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Edit-input1:focus,
+  .Edit-input2:focus {
+    border-color: #4d79ff;
+    box-shadow: 0 0 5px rgba(77, 121, 255, 0.5);
+    outline: none;
+  }
+  
+  .Edit-input3{
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  .Edit-btn {
+    background-color: #4d79ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .Edit-btn:hover {
+    background-color: #3a63d4;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Edit-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Cancel button specific styling */
+  .Edit-btn:last-of-type {
+    background-color: #ff4d4d;
+  }
+  
+  .Edit-btn:last-of-type:hover {
+    background-color: #d43f3a;
+  }
+   

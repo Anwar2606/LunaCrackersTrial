@@ -1,0 +1,73 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1.5rem 2rem; /* Increased the height by increasing the top and bottom padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar-title {
+  color: #ecf0f1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navbar List Styling */
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: inline;
+}
+
+/* Navbar Link Styling */
+.navbar-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.navbar-link:hover {
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Button Glow Effect */
+.glow-on-hover {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.glow-on-hover:hover {
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #3498db;
+  }
+  to {
+    box-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db, 0 0 50px #3498db;
+  }
+}
+
+.navbar-link:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+}
